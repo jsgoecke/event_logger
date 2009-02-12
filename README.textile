@@ -28,17 +28,17 @@ or
 
 * CouchRest v0.12.6+
 
-h2. Installation
+h2. Installation for ActiveRecord
 
-1. In your components directory of your Adhearsion project:
+1. In the components directory of your Adhearsion project:
 
 <pre>git clone git://github.com/jsgoecke/event_logger.git</pre>
 
-2. Then add the example code from above to your ~adhearsion-project/events.rb.
+2. Add the example code from above to your ~adhearsion-project/events.rb.
 
 3. Modify the ~adhearsion-project/components/event_logger/database.yml file for your database settings.
 	
-4. When using ActiveRecord, from within the directory ~adhearsion-project/components/event_logger/ run:
+4. From within the directory ~adhearsion-project/components/event_logger/ run:
 
 <pre>rake migrate</pre>
 
