@@ -43,10 +43,22 @@ h2. Installation for ActiveRecord
 
 2. Add the example code from above to your ~adhearsion-project/events.rb.
 
-3. Modify the ~adhearsion-project/components/event_logger/database.yml file for your database settings.
+3. Modify the ~adhearsion-project/components/event_logger/database.yml * event_logger.yml file for your database settings.
 	
 4. From within the directory ~adhearsion-project/components/event_logger/ run:
 
 <pre>rake migrate</pre>
+
+Then you are off and running!
+
+h2. Installation for CouchDB
+
+1. Install the CouchRest Gem:
+
+<pre>sudo gem install jchris-couchrest --source=http://gems.github.com</pre>
+
+2. Add the example code from above to your ~adhearsion-project/events.rb.
+
+3. Modify the ~adhearsion-project/components/event_logger/event_logger.yml file for your database settings.
 
 Then you are off and running!
