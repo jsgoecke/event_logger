@@ -1,0 +1,45 @@
+h1. Event Logger
+
+h2. Description
+
+Example component for Adhearsion showing how to log events using the event subsystem 'events.rb'.
+
+h2. Example
+
+Place this in the events.rb file of your Adhearsion project:
+
+    <pre>
+	<code>
+		events.asterisk.manager_interface.each do |event|
+		  begin
+		    log_event(event)
+		  rescue => err
+		    ahn_log.event_logger.info err
+		  end
+		end
+	</code>
+	</pre>
+		
+h2. Dependencies
+
+* ActiveRecord v2.2.2+
+
+or
+
+* CouchRest v0.12.6+
+
+h2. Installation
+
+1. In your components directory of your Adhearsion project:
+
+<pre>git clone git://github.com/jsgoecke/event_logger.git</pre>
+
+2. Then add the example code from above to your ~adhearsion-project/events.rb.
+
+3. Modify the ~adhearsion-project/components/event_logger/database.yml file for your database settings.
+	
+4. When using ActiveRecord, from within the directory ~adhearsion-project/components/event_logger/ run:
+
+<pre>rake migrate</pre>
+
+Then you are off and running!

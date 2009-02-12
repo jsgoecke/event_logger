@@ -1,0 +1,17 @@
+#Database type, may be ACTIVERECORD or COUCHDB
+:database_type: COUCHDB
+#Database URL when using CouchDB
+:couchdb_url: http://localhost:5984/adhearsion_events
+
+#Define event classes here, UserEvent can not
+#be defined here
+:event_members:
+    :call_events: 
+        - Newexten
+        - Newchannel
+        - Hangup
+        - Newstate
+    :asterisk_events: 
+        - Shutdown
+        - ChannelReload
+        - Reload

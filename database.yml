@@ -1,0 +1,7 @@
+adapter: mysql
+host: localhost
+username: myuser
+password: secret
+database: adhearsion_events
+encoding: utf8
+pool: 20
