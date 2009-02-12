@@ -2,7 +2,14 @@ h1. Event Logger
 
 h2. Description
 
-Example component for Adhearsion showing how to log events using the event subsystem 'events.rb'.
+Example component for Adhearsion showing how to log events using the event subsystem 'events.rb'. The component currently supports these events with ActiveRecord:
+
+	- Newexten
+	- Newchannel
+	- Hangup
+	- Newstate
+
+The schema will need to be adjusted to support all of the events available <a href="http://www.voip-info.org/wiki/view/asterisk+manager+events">here</a>. Given the schema-less nature of <a href="http://couchdb.apache.org/">CouchDB</a> all events are supported.
 
 h2. Example
 
