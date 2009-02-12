@@ -15,18 +15,18 @@ h2. Example
 
 Place this in the events.rb file of your Adhearsion project:
 
-    <pre>
-	<code>
-		events.asterisk.manager_interface.each do |event|
-		  begin
-		    log_event(event)
-		  rescue => err
-		    ahn_log.event_logger.info err
-		  end
-		end
-	</code>
-	</pre>
-		
+<pre>
+<code>
+events.asterisk.manager_interface.each do |event|
+  begin
+    log_event(event)
+  rescue => err
+	ahn_log.event_logger.info err
+  end
+end
+</code>
+</pre>
+
 h2. Dependencies
 
 * ActiveRecord v2.2.2+
