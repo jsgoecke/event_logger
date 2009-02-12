@@ -9,7 +9,7 @@ Example component for Adhearsion showing how to log events using the event subsy
 	- Hangup
 	- Newstate
 
-The schema will need to be adjusted to support all of the events available <a href="http://www.voip-info.org/wiki/view/asterisk+manager+events">here</a>. Given the schema-less nature of <a href="http://couchdb.apache.org/">CouchDB</a> all events are supported.
+The schema will need to be adjusted to support all of the events available <a href="http://www.voip-info.org/wiki/view/asterisk+manager+events" target="_blank">here</a>. Given the schema-less nature of <a href="http://couchdb.apache.org/" target="_blank">CouchDB</a> all events are supported.
 
 h2. Example
 
