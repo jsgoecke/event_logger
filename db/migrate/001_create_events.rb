@@ -24,7 +24,7 @@ class CreateEvents < ActiveRecord::Migration
       t.string  "calleridname"
       t.string  "callgroup"
       t.string  "callstaken"
-      t.string "cid-callingpres"
+      t.string  "cid-callingpres"
       t.string  "cause"
       t.string  "cause-txt"
       t.string  "channel"
